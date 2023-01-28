@@ -1,0 +1,300 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    
+}
+
+/* ------------------------------------------------------------------------- */
+/* NAVBAR SECTION CSS */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* NAVBAR LIST */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+/* NAVBAR ANCHOR TAGS */
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    padding:10px 15px ;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease-in;
+}
+#navbar ul li a:hover{
+    text-decoration: underline;
+}
+/* NAVBAR IMAGES */
+.nav-brand{
+    width: 50px;
+    margin: 10px 15px;
+}
+/* ------------------------------------------------------------------------- */
+ 
+/* HOME SECTION */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    padding: 3% 5%;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto; 
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    background: url("bg1.jpg") center center;
+    background-size: cover;
+    
+    height: 570px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+
+
+/* HPME SECTION TEXTS */
+.h-primary{
+    font-size: 3.0rem;
+    line-height: 1.5;
+    font-weight: bold;
+    
+}
+.p-primary{
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+/* HPME SECTION TEXTS */
+.btn-primary{
+    padding: 10px 20px;
+    border: 2px solid;
+    background-color: brown;
+    color: wheat;
+    border-radius: 55px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    box-shadow: 2px 2px wheat;
+    transition: all 0.3s ease-in;
+}
+.btn-primary:hover{
+    background-color: #3C2A21;
+    color: white;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* SERVICES SECTION  */
+#services{
+    background-color:white;
+    position: relative;
+    top: 10px;
+    height: 450px;
+}
+
+
+.box img{
+    width: 140px;
+    position: absolute;
+    top:80px;
+}
+.box{
+    border: 2px solid;
+    background-color:brown;
+    display: flex;
+    color:white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 25%;
+  
+    position: relative;
+    
+    height: 300px;
+    padding: 10px 5px;
+    border-radius: 33px;
+    margin: 0 23px;
+}
+.box h2{
+    position:absolute;
+    top: 10px;
+    margin: 10px 0;
+}
+.box p{
+    position:absolute;
+    top: 185px;
+    
+}
+
+.services-container{
+    font-family: 'Quicksand', sans-serif;
+ 
+   
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.h-secondary{
+    font-size: 2rem;
+}
+#services h1{
+    font-size: 2.8rem;
+    line-height: 2;
+    font-weight: bold;  
+    font-family: 'Quicksand', sans-serif;
+    color:#3C2A21;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+/* CLIENTS SECTION  */
+#clients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    position: relative;
+    background-color: #973a0c1d;
+}
+#clients::before{
+    content: '';
+    background: url("bg.jpg");
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.45;
+    position: absolute;
+}
+#clients h1{
+    margin-top: 20px;
+    color:#3C2A21;
+    font-family: 'Quicksand';
+}
+.client-image img{
+    margin: 0 34px;
+    width: 100px;
+}
+.clients-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* CONTACTS SECTION  */
+
+#contacts{
+    height: 300px;
+}
+
+.contact-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 38%;
+    margin: 0 auto;
+  
+    padding:10px 10px;
+    
+    height: 550px;
+}
+
+.contact-container h1{
+    text-align: center;
+    font-family: 'Quicksand';
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px ;
+}
+
+.contact-form-container label{
+    font-size: 1.4rem;
+    margin-left:80px;
+    line-height: 1.5;
+    font-family: 'Quicksand';
+    color: #3C2A21;
+    font-weight: bold;
+  
+}
+.contact-form-container input,textarea{
+    padding: 8px;
+    border-radius: 14px;
+    width: 70%;
+    display: block;
+    border: 1px solid brown;
+    margin-left:80px;
+    background: none;
+    box-shadow: 1px 1px grey;
+}
+
+
+.contact-form-container button{
+    width: 150px;
+    padding: 8px;
+    border: 1px solid brown;
+    border-radius: 22px;
+    margin: 20px auto 0 auto;
+}
+
+#contacts::before{
+    content:"";
+    background: url("contact.jpg")no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.45;
+}
+
+
+
+/* FOOTER SECTION   */
+footer{
+    text-align: center;
+    font-size: 22px;
+    background-color: #3C2A21;
+    color: white;
+    position: relative;
+    top: 380px;
+    font-family: "Quicksand";
+    height: 70px;
+    display: flex;  
+    align-items: center;
+    justify-content: center ;
+}
